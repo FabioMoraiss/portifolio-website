@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
+const today = new Date();
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
@@ -9,33 +10,50 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Sou um jovem desenvolvedor back-end de {today.getFullYear() -2003} anos e uma paixão por tecnologia que vem desde a infância.
+    Minha expertise reside na criação de APIs robustas, bancos de dados eficientes e código limpo.
+    Neste portfólio, você encontrará meus melhores projetos e poderá entrar em contato comigo.
+    <br>
+    <b>Vamos juntos construir soluções tecnológicas inovadoras! 👊</b>
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
+    <div class="text-3xl w-full font-bold">Formação Acadêmica</div>
   </div>
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Graduação: Análise e Desenvolvimento de Sistemas - Instituto Federal do Paraná"
+      subtitle="2023 até 2025"
     />
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Ensino Médio: Colégio Militar de Campo Grande"
+      subtitle="2015 até 2022"
     />
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
+    <div class="text-3xl w-full font-bold"> Experiência </div>
   </div>
 
   <div class="time-line-container mb-10">
     <TimeLineElement
+      title="Analista de testes na Aliare"
+      subtitle="De Março a Outubro de 2023"
+    >
+    Alocado no projeto CRM <br><br>
+    • mais de 6 mil usuários ativos <br>
+    • Responsável pela análise e modelagem de teste para novas funcionalidades<br>
+    • Escrita de cenários e scripts de testes funcionais e não funcionais<br>
+    • Documentação e acompanhamento de bugs<br>
+    • Banco de dados: PostgreSQL, SQLite<br>
+    • Metodologia ágil: Scrum<br>
+    <br>
+    • <b>Principais Resultados:</b> Modelei os casos de uso mais críticos para um novo aplicativo que estava em desenvolvimento. Identifiquei uma desconformidade que poderia ocasionar em perda de dados aos clientes.
+    
+    </TimeLineElement>
+
+    <!-- <TimeLineElement
       title="Job Title at Project or Company Name"
       subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
     >
@@ -46,47 +64,66 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
     >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
+    </TimeLineElement> -->
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
+    <div class="text-3xl w-full font-bold"> Cursos </div>
   </div>
 
   <ul class="list-disc mx-6 mb-10 grid gap-2">
     <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
+      <a href="#" target="_blank"> Progamador de sistemas - Senac</a>
+      <p>• carga horária: 200 horas</p>
     </li>
     <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
+      <a href="#" target="_blank"> POO com Java - Instituto Tecnológico da Aeronáutica</a>
+      <p>• carga horária: 50 horas</p>
+    </li>
+    <li>
+    <a href="#" target="_blank">Escola de programação ALURA</a>
+      <p>• carga horária: 150 horas</p>
     </li>
   </ul>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
+    <div class="text-3xl w-full font-bold">Hard Skills</div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+  <ul class="list-disc md:columns-2 columns-2 mx-6">
+    <li>Java</li>
+    <li>Spring Boot</li>
+    <li>Cypress</li>
+    <li>API REST</li>
+    <li>Postman</li>
+    <li>DDD</li>    
+    <li>POO</li>
+    <li>Jira</li>
+  </ul>
+  <br>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Soft Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-2 columns-2 mx-6">
+    <li>Trabalho em Equipe</li>  
+    <li>Comunicação Asertiva</li>
+    <li>Resolução de Problemas</li>
+    <li>Raciocínio Lógico</li>
+    <li>Capacidade Analítica</li>
+    <li>adaptabilidade</li>
+  </ul>
+
+  <br><br>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Contato</div>
+  </div>
+
+  <ul class="list-disc md:columns-1 columns-2 mx-6">
+    <li><a href="https://www.linkedin.com/in/fabiomoraiss/">Linkedin</a></li>  
+    <li>Emai: rarinaldo@outlook.com</li>
+    <li>Whatsapp: 67 981767637</li>
   </ul>
 </BaseLayout>
